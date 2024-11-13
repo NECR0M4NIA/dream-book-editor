@@ -41,7 +41,18 @@ h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     animation: fadeInUp 1s ease-out;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #fff;
+    margin: 20px 0;
+    animation: slideIn 1s ease-in-out;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .dream-form, .dream-entries {
@@ -58,6 +69,8 @@ h2 {
     flex-direction: column;
     gap: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    font-weight: 600;
 }
 
 button {
@@ -118,6 +131,7 @@ select {
     color: #fff;
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 option {
