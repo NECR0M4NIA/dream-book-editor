@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal de Rêves</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dream Book Editor</h1>
+            <p>Enregistrez et revivez vos rêves</p>
+        </header>
+
+        <section class="dream-form">
+            <h2>Ajouter un nouveau rêve</h2>
+            <form id="dreamForm">
+                <label>Titre du rêve</label>
+                <input type="text" id="dreamTitle" required placeholder="Titre du rêve">
+                
+                <label>Description</label>
+                <textarea id="dreamDescription" required placeholder="Décrivez votre rêve"></textarea>
+                
+                <label>Note du rêve (sur 10)</label>
+                <input type="number" id="dreamRating" min="1" max="10" required>
+                
+                <label>Qualité du rêve</label>
+                <select id="dreamQuality">
+                    <option>Excellent</option>
+                    <option>Bon</option>
+                    <option>Moyen</option>
+                    <option>Mauvais</option>
+                </select>
+                
+                <label>Longueur du rêve</label>
+                <select id="dreamLength">
+                    <option>Court</option>
+                    <option>Moyen</option>
+                    <option>Long</option>
+                </select>
+                
+                <label>Type de rêve</label>
+                <select id="dreamType">
+                    <option>Rêve normal</option>
+                    <option>Cauchemar</option>
+                </select>
+                
+                <button type="submit">Enregistrer le rêve</button>
+            </form>
+        </section>
+
+        <section class="dream-entries">
+            <h2>Vos rêves</h2>
+            <div id="dreamList" class="dream-list"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
